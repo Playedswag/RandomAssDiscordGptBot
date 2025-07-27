@@ -2,5 +2,5 @@ src/.env
 src/debug.log
 __pycache__/
 *.pyc
-src/Data/ChatHistory/*
+src/Data/ChatHistory/ChatHistory.json
 !src/Data/ChatHistory/.gitkeep

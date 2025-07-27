@@ -2,7 +2,7 @@ import json
 import os
 from datetime import datetime
 
-DATASAVE_FILE = "Data/ChatHistory.json"
+DATASAVE_FILE = "src/Data/ChatHistory.json"
 Remembering_Messages = 5 #Change to affect the amount of messages Darius can remember, effects token usage!
 
 

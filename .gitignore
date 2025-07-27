@@ -3,3 +3,4 @@ src/debug.log
 __pycache__/
 *.pyc
 src/Data/ChatHistory.json
+debug.log

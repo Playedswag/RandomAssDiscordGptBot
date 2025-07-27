@@ -24,3 +24,22 @@ A Discord bot that integrates GPT (OpenAI) to generate responses in your Discord
 ```bash
 git clone https://github.com/Playedswag/RandomAssDiscordGptBot.git
 cd RandomAssDiscordGptBot
+```
+
+2. Rename `.env.example` to `.env` and update the API keys:
+
+- Open the `.env.example` file  
+- Replace the placeholder values for your Discord bot token and OpenAI API key with your actual keys  
+- Save the file as `.env`
+
+3. Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+4. Run the bot:
+
+```bash
+python bot.py
+```

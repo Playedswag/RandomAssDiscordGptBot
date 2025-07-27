@@ -35,11 +35,11 @@ cd RandomAssDiscordGptBot
 3. Install dependencies:
 
 ```bash
-pip install -r requirements.txt
+Run InstallRequirements.bat to install all dependencies
 ```
 
 4. Run the bot:
 
 ```bash
-python bot.py
+Double click the RunBot.bat or run Discord.py
 ```

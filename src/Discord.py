@@ -14,7 +14,7 @@ from gpt import should_reply, GetInput
 load_dotenv()
 token = os.getenv('DISCORD_TOKEN')
 
-print(f"Token loaded: {token}")
+print(f"Token loaded!")
 
 Debug_Handler = logging.FileHandler(filename='debug.log', encoding='utf-8', mode='w')
 intents = discord.Intents.default()

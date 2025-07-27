@@ -1,5 +1,5 @@
 src/.env
 src/debug.log
-src/Data/ChatHistory.json
 __pycache__/
 *.pyc
+src/Data/ChatHistory.json

@@ -4,3 +4,4 @@ __pycache__/
 *.pyc
 src/Data/ChatHistory.json
 debug.log
+.venv/

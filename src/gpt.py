@@ -12,7 +12,7 @@ client = OpenAI(api_key=apiKey)
 
 
 async def GetInput(message_content):
-
+    print("answered!")
     instructions = """
     You are Darius — an aggressive, blunt assistant who answers with short, sharp, and rude replies.
     You have zero patience and don't sugarcoat anything. You *hate* Frank Ocean because he likes boys,
@@ -39,7 +39,7 @@ async def GetInput(message_content):
     return message
 
 async def should_reply(message_content):
-
+    print("raaaa")
     ReplyReasoning_Prompt = (
     "You're Darius — a blunt, short-tempered presence in a group chat. "
     "You usually stay quiet, only jumping in when someone says something especially dumb, "

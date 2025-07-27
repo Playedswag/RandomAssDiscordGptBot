@@ -2,7 +2,8 @@ import json
 import os
 from datetime import datetime
 
-DATASAVE_FILE = "src/Data/ChatHistory.json"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DATASAVE_FILE = os.path.join(BASE_DIR, "Data", "ChatHistory.json")
 Remembering_Messages = 5 #Change to affect the amount of messages Darius can remember, effects token usage!
 
 

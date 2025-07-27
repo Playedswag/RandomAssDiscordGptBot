@@ -14,7 +14,7 @@ from gpt import should_reply, GetInput
 load_dotenv()
 token = os.getenv('DISCORD_TOKEN')
 
-
+print(f"Token loaded: {token}")
 
 Debug_Handler = logging.FileHandler(filename='debug.log', encoding='utf-8', mode='w')
 intents = discord.Intents.default()
@@ -32,6 +32,8 @@ async def on_ready():
 
 @bot.event
 async def on_message(message):
+    print(f"[DEBUG] Message from {message.author}: {message.content}")
+
     if message.author == bot.user:
         return
 

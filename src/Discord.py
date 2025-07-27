@@ -4,8 +4,9 @@ from discord.ext import commands
 import logging
 from dotenv import load_dotenv
 import os
-from openai import OpenAI
 import asyncio
+from DataSave import save_message
+
 
 
 from gpt import should_reply, GetInput
@@ -36,6 +37,7 @@ async def on_message(message):
 
     formatted_message = f"{message.author.display_name} says: {message.content}"
     
+    save_message("user", formatted_message)
     if await should_reply(message.content):
         async with message.channel.typing():
             await asyncio.sleep(2)

@@ -1,2 +1,4 @@
-.env
-debug.log
+src/.env
+src/debug.log
+__pycache__/
+*.pyc

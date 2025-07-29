@@ -2,7 +2,6 @@ from openai import OpenAI
 import os
 from dotenv import load_dotenv
 from DataSave import save_message, load_chats
-import json
 
 
 load_dotenv()

@@ -6,10 +6,9 @@ from dotenv import load_dotenv
 import os
 import asyncio
 from DataSave import save_message
-
-
-
 from gpt import should_reply, GetInput
+
+Bot_ID = None
 
 load_dotenv()
 token = os.getenv('DISCORD_TOKEN')
@@ -24,9 +23,12 @@ bot = commands.Bot(command_prefix='!', intents=intents)
 
 
 
+
 @bot.event
 async def on_ready():
-    print(f'We have logged in as {bot.user.name}')
+    global Bot_ID
+    Bot_ID = bot.user.id
+    print(f"Logged in as {bot.user} with ID {Bot_ID}")
     await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.listening, name="Frank Ocean"))
 
 
